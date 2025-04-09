@@ -1,115 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Icones do Font Awsome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<!-- Link para a pasta src/style.css (geral)-->
-<link rel="stylesheet" href="src/styles/style.css">
-<!-- Link para a pasta src/navbar.css (específico)-->
-<link rel="stylesheet" href="src/styles/navbar.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Icones do Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Link para a pasta src/style.css (geral)-->
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <!-- Link para a pasta src/navbar.css (específico)-->
+    <link rel="stylesheet" href="src/styles/navbar.css" />
+    <!-- Link para a pasta src/home.css (específico)-->
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-<title>Landing page</title>
-</head>
+    <title>Landing page</title>
+  </head>
 
-<body>
+  <body>
+    <!-- NAVBAR - logo/ícoe - itens menu - botão  -->
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-ghost" id="nav_logo"> GAMING</i>
 
-<!-- NAVBAR - logo/ícoe - itens menu - botão  -->
-<header>
-<nav id="navbar">
-<i class="fa-solid fa-ghost" id="nav_logo"> GAMING</i>
+        <!-- LINKS para outras paginas(em formato de lista)-->
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#games">Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
 
-<!-- LINKS para outras paginas(em formato de lista)-->
-<ul id="nav_list">
-    <li class="nav-item active">
-        <a href="#inicio">Início</a>
-    </li>
-    <li class="nav-item">
-        <a href="#games">Jogos</a>
-    </li>
-    <li class="nav-item">
-        <a href="#contato">Contato</a>
-    </li>
-</ul>
+        <!-- Botão do compre aqui -->
+        <button class="btn-default">Registre-se</button>
+        <!-- Botão da barra lateral (p/ mobile) -->
+        <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+      </nav>
 
-<!-- Botão do compre aqui -->
-<button class="btn-default">Compre aqui</button>
-<!-- Botão da barra lateral (p/ mobile) -->
-<button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
-</nav>
+      <!-- Mobile navlist quando clica na barra lateral-->
+      <div id="mobile_menu">
+        <!-- PAREI AQUI 7:05 -->
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#games">Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+        <!-- Botão do compre aqui -->
+        <button class="btn-default">Registre-se</button>
+      </div>
+    </header>
+    <!-- FIM DA NAVBAR -->
 
-<!-- Mobile navlist quando clica na barra lateral-->
-<div id="mobile_menu">
-<!-- PAREI AQUI 7:05 -->
-<ul id="mobile_nav_list"> 
-    <li class="nav-item">
-        <a href="#inicio">Início</a>
-    </li>
-    <li class="nav-item">
-        <a href="#games">Jogos</a>
-    </li>
-    <li class="nav-item">
-        <a href="#contato">Contato</a>
-    </li>
-</ul>
-<!-- Botão do compre aqui -->
-<button class="btn-default">Compre aqui</button>
-</div>
-</header>
-                    <!-- FIM DA NAVBAR -->
+    <!-- CONTEÚDO -->
+    <main>
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">Jogos de <span>altissíma</span> qualidade</h1>
 
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectet'ur adipisicing elit. Sunt,
+            voluptate nobis provident ab, maiores numquam rerum possimus debitis
+            totam similique veniam eveniet, quasi vel voluptatem illo architecto
+            facere nihil pariatur.
+          </p>
 
-<!-- CONTEÚDO -->
-<main>
-<section id="home"></section>
-<div id="cta">
-<h1 class="title">
-Jogos de <span>altissíma</span> qualidade
-</h1>
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Conferir Promoções </a>
+            <!-- BOTÃO DO TELEFONE -->
+            <a href="tel:+555555555" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (11) 99999-9999
+            </a>
 
-<p class="description">
-Lorem ipsum, dolor sit amet consectet'ur adipisicing elit. Sunt, voluptate nobis provident ab, maiores numquam rerum possimus debitis totam similique veniam eveniet, quasi vel voluptatem illo architecto facere nihil pariatur.
-</p>
+            <!-- BOTÃO DAS REDES SOCIAIS -->
+            <div class="social-media-buttons">
+              <!-- whatsapp -->
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <!-- instagram -->
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <!-- facebook -->
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-<div id="cta_buttons">
-<a href="#" class="btn_default"> 
-Conferir Promoções
-</a>
-<!-- BOTÃO DO TELEFONE -->
-<a href="tel:+555555555" id="phone_button">
-<button class="btn-default"> 
-<i class="fa-solid fa-phone"></i>
-(11) 98422-1884
-</button>
-</a>
+        <!-- imagem do arcade -->
+        <div id="banner">
+          <img src="src/styles/images/arcade.png" alt="Imagem de arcade" />
+        </div>
+      </section>
+    </main>
 
-<!-- BOTÃO DAS REDES SOCIAIS -->
-<div class="social-media-buttons">
-<!-- whatsapp -->
-<a href="#">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- instagram -->
-<a href="#">
-<i class="fa-brands fa-instagram"></i>
-</a>
-<!-- facebook -->
-<a href="#">
-<i class="fa-brands fa-facebook"></i>
-</a>
-
-</div>
-
-</div>
-
-</div>
-<div id="banner"></div>
-
-</main>
-
-<script src="javascript/script.js"></script>  
-</body>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
