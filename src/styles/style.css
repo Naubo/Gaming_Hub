@@ -64,3 +64,10 @@ transition: background-color .3s ease;
 
 }
 
+.section-title {
+    color: #76269b;
+    font-size: 2rem;
+}
+.section-subtitle {
+    font-size: 3rem;
+}
