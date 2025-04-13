@@ -37,7 +37,7 @@
   justify-content: center;
   background-color: rgb(0, 0, 0);
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #fff9ea;
   width: 70px;
   height: 70px;
   right: -10px;
@@ -76,5 +76,16 @@
 
   .game {
     width: calc(50% - 12px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .game {
+    width: calc(100%);
+  }
+
+  #biblioteca .section-subtitle {
+    text-align: center;
   }
 }
