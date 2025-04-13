@@ -18,7 +18,7 @@
   color: #1c1766;
 }
 #cta .title span {
-  color: #f0b338;
+  color: var(--cor-secundaria);
 }
 
 #cta .description {
@@ -75,7 +75,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1180px) {
   #home {
     min-height: 100%;
     padding: 0px;

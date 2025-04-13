@@ -57,7 +57,7 @@
 }
 
 .game-rate i{
-    color: #F0B338;
+    color: var(--cor-secundaria);
     font-size: 1.2rem;
     text-align: center;
 }

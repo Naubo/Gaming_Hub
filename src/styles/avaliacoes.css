@@ -1,0 +1,103 @@
+#avaliacoes {
+  min-height: calc(100vh - 91px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+#avaliacoes_jogador {
+  width: 500px;
+  height: auto;
+}
+
+#avaliacoes-content {
+  width: 50%;
+}
+
+#feedbacks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+.feedback-avatar {
+  width: 60px;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.feedback-content p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-content p span {
+  font-size: 12px;
+  color: #76269b;
+}
+
+@media screen and (max-width: 1640px) {
+  #avaliacoes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #avaliacoes .section-subtitle {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #avaliacoes .section-title {
+    text-align: center;
+  }
+
+  #avaliacoes-jogador {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #avaliacoes-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #avaliacoes .section-subtitle {
+    font-size: 2.2rem;
+  }
+
+  #avaliacoes-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feedback {
+    flex-direction: column;
+  }
+
+  .feedback-avatar {
+    width: 150px;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
