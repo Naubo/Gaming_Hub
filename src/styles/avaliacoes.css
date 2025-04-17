@@ -44,6 +44,12 @@
   justify-content: space-between;
 }
 
+.feedback-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
 .feedback-content p span {
   font-size: 12px;
   color: #76269b;
