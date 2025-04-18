@@ -38,4 +38,35 @@ $(document).ready(function () {
     navitens.removeClass("active");
     $(navitens[activeSectionIndex]).addClass("active");
   });
+
+ScrollReveal().reveal('#cta', {
+  origin: 'left',
+  durance: 2000,
+  distance: '20%',
+})
+
+ScrollReveal().reveal('.game', {
+  origin: 'top',
+  durance: 2000,
+  distance: '20%',
+})
+
+ScrollReveal().reveal('#banner img', {
+  origin: 'right',
+  durance: 2000,
+  distance: '20%',
+})
+
+ScrollReveal().reveal('.avaliacoes-jogador', {
+  origin: 'left',
+  durance: 2000,
+  distance: '20%',
+})
+
+ScrollReveal().reveal('.feedback', {
+  origin: 'right',
+  durance: 2000,
+  distance: '20%',
+})
+
 });
